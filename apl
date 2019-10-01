@@ -1,9 +1,9 @@
-	{
-		"directives": [
-			{
-				"type": "Alexa.Presentation.APL.RenderDocument",
-				"token": "anydocument",
-				"document": {
+{
+	"directives": [
+		{
+			"type": "Alexa.Presentation.APL.RenderDocument",
+			"token": "anydocument",
+			"document": {
 			 	"type": "APL",
 				"version": "1.1",
 				"theme": "dark",
