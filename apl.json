@@ -1,162 +1,158 @@
 {
-	"directives": [
-		{
-			"type": "Alexa.Presentation.APL.RenderDocument",
-			"token": "anydocument",
-			"document": {
-			 	"type": "APL",
-				"version": "1.1",
-				"theme": "dark",
-				"resources": [],
-				"import": [
-					{
-						"name": "alexa-viewport-profiles",
-						"version": "1.0.0"
-					}
-				],
-				"mainTemplate": {
-					"item": [
-						{
-							"when": "${viewport.shape == 'round'}",
-							"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-										"type": "Image",
-										"source": "https://source.example.com/picture_480x480.png",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "fill"
-									}
-								]
-							}
-						},
-						{
-							"when": "${@viewportProfile == @hubLandscapeSmall}",
-							"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-										"type": "Image",
-										"source": "https://source.example.com/picture_960x480.jpg",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "best-fill"
-									}
-								]
-							}
-						},
-						{
-							"when": "${@viewportProfile == @hubLandscapeMedium}",
-							"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-									"type": "Image",
-										"source": "https://source.example.com/picture_1024x600.jpg",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "best-fill"
-									}
-								]
-							}
-						},
-						{
-							"when": "${@viewportProfile == @hubLandscapeLarge}",
-		  				"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-										"type": "Image",
-										"source": "https://source.example.com/picture_1280x800.jpg",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "best-fill"
-									}
-								]
-							}
-						},
-						{
-							"when": "${@viewportProfile == @tvLandscapeXLarge}",
-							"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-										"type": "Image",
-										"source": "https://source.example.com/picture_1920x1080.jpg",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "best-fill"
-									}
-								]
-							}
-						},
-						{
-							"when": "true",
-							"type": "Frame",
-							"height": "100vh",
-							"width": "100vw",
-							"backgroundColor": "#5E0808",
-							"item": {
-								"type": "Container",
-								"height": "100vh",
-								"width": "100vw",
-								"justifyContent": "center",
-								"items": [
-									{
-										"type": "Image",
-										"source": "https://source.example.com/picture_1920x1080_2.jpg",
-										"width": "100vw",
-										"height": "100vh",
-										"position": "absolute",
-										"scale": "best-fill"
-									}
-								]
-							}
-						}
-					]
-				}
+	"type": "Alexa.Presentation.APL.RenderDocument",
+	"token": "anydocument",
+	"document": {
+		"type": "APL",
+		"version": "1.1",
+		"theme": "dark",
+		"resources": [],
+		"import": [
+			{
+				"name": "alexa-viewport-profiles",
+				"version": "1.0.0"
 			}
+		],
+		"mainTemplate": {
+			"item": [
+				{
+					"when": "${viewport.shape == 'round'}",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_480x480.png",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "fill"
+							}
+						]
+					}
+				},
+				{
+					"when": "${@viewportProfile == @hubLandscapeSmall}",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_960x480.jpg",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "best-fill"
+							}
+						]
+					}
+				},
+				{
+					"when": "${@viewportProfile == @hubLandscapeMedium}",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_1024x600.jpg",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "best-fill"
+							}
+						]
+					}
+				},
+				{
+					"when": "${@viewportProfile == @hubLandscapeLarge}",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_1280x800.jpg",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "best-fill"
+							}
+						]
+					}
+				},
+				{
+					"when": "${@viewportProfile == @tvLandscapeXLarge}",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_1920x1080.jpg",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "best-fill"
+							}
+						]
+					}
+				},
+				{
+					"when": "true",
+					"type": "Frame",
+					"height": "100vh",
+					"width": "100vw",
+					"backgroundColor": "#5E0808",
+					"item": {
+						"type": "Container",
+						"height": "100vh",
+						"width": "100vw",
+						"justifyContent": "center",
+						"items": [
+							{
+								"type": "Image",
+								"source": "https://source.example.com/picture_1920x1080_2.jpg",
+								"width": "100vw",
+								"height": "100vh",
+								"position": "absolute",
+								"scale": "best-fill"
+							}
+						]
+					}
+				}
+			]
 		}
-	]
+	}
 }
